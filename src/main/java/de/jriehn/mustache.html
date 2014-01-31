@@ -1,0 +1,17 @@
+{{>/Users/jriehn/workspace/ftw/ftw-pom/ftw-dummy/templates/1/1.1.1-SNAPSHOT/_common/header.mustache}}
+{{#bug}}
+{{/bug}}
+
+{{#items}}
+  {{#first}}
+    <li><strong>{{name}}</strong></li>
+  {{/first}}
+  {{#link}}
+    <li><a href="{{url}}">{{name}}</a></li>
+  {{/link}}
+{{/items}}
+
+{{#empty}}
+  <p>The list is empty.</p>
+{{/empty}}
+{{>/Users/jriehn/workspace/ftw/ftw-pom/ftw-dummy/templates/1/1.1.1-SNAPSHOT/_common/footer.mustache}}
